@@ -1,5 +1,8 @@
 package com.wddlhyss.community.model;
 
+/**
+ * GitHub链接文件
+ */
 public class AccessToken {
     private String client_id;
     private String client_secret;

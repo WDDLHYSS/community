@@ -1,9 +1,21 @@
 package com.wddlhyss.community.model;
 
+/**
+ * github用户信息
+ */
 public class GithubUser {
     private String name;
-    private long id;
+    private String  id;
     private  String bio;
+
+    @Override
+    public String toString() {
+        return "GithubUser{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", bio='" + bio + '\'' +
+                '}';
+    }
 
     public String getName() {
         return name;
@@ -13,11 +25,11 @@ public class GithubUser {
         this.name = name;
     }
 
-    public long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

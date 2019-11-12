@@ -8,6 +8,9 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
+/**
+ * 模拟post请求获取令牌
+ */
 @Component
 public class GitHubProvider {
     public String getAccessToken(AccessToken accessToken){
