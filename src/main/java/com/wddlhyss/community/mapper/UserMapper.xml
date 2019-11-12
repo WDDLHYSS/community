@@ -6,4 +6,7 @@
         insert into users (name, accountId, token, gmtCreate, gmtModified)
         VALUES(#{name},#{accountId},#{token},#{gmtCreate},#{gmtModified})
     </insert>
+    <select id="findByToken" parameterType="String" resultType="com.wddlhyss.community.model.User">
+        select * from users where token = #{token}
+    </select>
 </mapper>

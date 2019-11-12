@@ -15,4 +15,9 @@ public class UserServiceImpl implements UserService {
     public void insertUser(User user) {
         userMapper.insertuser(user);
     }
+
+    @Override
+    public User findByToken(String token) {
+        return userMapper.findByToken(token);
+    }
 }
